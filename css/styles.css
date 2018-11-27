@@ -1,13 +1,17 @@
 .navbar{
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     min-height: 6vh;
     z-index: 10;
     background-color: white;
 }
 
-.nav-item.active a{
+.active{
     font-weight: bold;
+}
+
+.active.hover-effect:before{
+    transform: scaleX(1);
 }
 
 .level-1{
@@ -97,8 +101,23 @@
 
 section#content{
     background: linear-gradient(180deg, #E4E4E4, #74EBD5);
-    min-height: 255vh;
+    min-height: 265vh;
 }
+
+
+#home .navbar-nav ul li:nth-child(1) a{
+    font-weight: bold;
+    color: #000;
+}
+#about .navbar-nav ul li:nth-child(2) a{
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+
+
 
 article>div{
     min-height: 62.5vh;
@@ -121,6 +140,10 @@ article>div{
     width: 25%;
     height: auto;
     margin: 5%;
+}
+
+.article-description{
+    text-align: justify;
 }
 
 .form-container{
@@ -148,6 +171,7 @@ footer div{
 .autosized{
     flex: 0 auto;
 }
+
 
 .btn{
     font-weight: bold;
@@ -213,6 +237,14 @@ footer a:hover{
 
     .hover-effect:before{
         width: 25%;
+    }
+
+    .rounded-active{
+        transform: none;
+    }
+
+    .article-description{
+        text-align: center; 
     }
 
     #php-response{
