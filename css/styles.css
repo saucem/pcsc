@@ -45,6 +45,10 @@
     position: absolute;
 }
 
+.text-justified{
+    align-text: justified;
+}
+
 #blue-screen{
     top:-6%;
     left:0%;
