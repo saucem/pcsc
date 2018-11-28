@@ -1,0 +1,284 @@
+html, body, header{
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    min-height: 6vh;
+    z-index: 10;
+    background-color: white;
+}
+
+.navbar-brand{
+
+}
+
+.active{
+    font-weight: bold;
+}
+
+.active.hover-effect:before{
+    transform: scaleX(1);
+}
+
+.level-1{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hover-effect{
+    position: relative;
+}
+
+.hover-effect:before{
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+    transform:  scaleX(0);
+}
+
+.hover-effect:hover:before {
+    transform:  scaleX(1);
+}
+
+.anchor{
+    position: relative;
+}
+
+.anchor a{
+    position: absolute;
+    left: 0;
+    top: -12vh;
+}
+
+.hero{
+    height: 94vh;
+    background-image: url(../image/hero-image.jpg);
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.text-justified{
+    text-align: justify;
+}
+
+#blue-screen{
+    top:-10vh;
+    left:0%;
+    width: 50vh;
+    height: 100vh;
+    transform: rotate(-60deg);
+    background-color: rgba(0, 0, 255, 0.5);
+    border-radius: 50px;
+}
+
+.hero-title{
+    color:white;
+    font-size: 4em;
+}
+
+.rounded-active{
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background-color: rgba(255, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.8);
+}
+
+.rounded-active:hover{
+    /*transform: rotate(360deg)*/
+    transform: scale(1);
+    border-color: red;
+    box-shadow: 0px 0px 3px rgba(255, 0, 0, 0.5);
+}
+
+.rounded-active:active{
+    transform: scale(0.95);
+    transition-duration: 0.25s;
+}
+
+.rounded-active a{
+    font-size: 2em;
+    color: white;
+}
+
+.rounded-active a:hover{
+    text-decoration: none;
+}
+
+section#content{
+    background: linear-gradient(180deg, #E4E4E4, #74EBD5);
+    min-height: 265vh;
+}
+
+
+#home .navbar-nav ul li:nth-child(1) a{
+    font-weight: bold;
+    color: #000;
+}
+#about .navbar-nav ul li:nth-child(2) a{
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+
+
+
+article>div{
+    min-height: 62.5vh;
+}
+
+#pricing>div{
+    min-height: 50vh;
+}
+
+#service>div{
+    min-height: 70vh;
+}
+
+#about-image, #store-image{
+    width: 100%;
+    min-height: auto;
+}
+
+.article-image{
+    width: 25%;
+    height: auto;
+    margin: 5%;
+}
+
+.article-description{
+    text-align: justify;
+}
+
+.form-container{
+    background-color: #CCC;
+    border-radius: 10px;
+    padding: 3% 0;
+}
+.form-container .row{
+    padding: 0px 15px;
+}
+
+.form-container button{
+    margin-top: 5%;
+}
+
+footer{
+    min-height: 20vh;
+    background-color: #324355;
+}
+
+footer div{
+    flex: 1;
+}
+
+.autosized{
+    flex: 0 auto;
+}
+
+
+.btn{
+    font-weight: bold;
+}
+
+.btn:active{
+    box-shadow: none;
+}
+
+.contact-info, footer a{
+    font-weight: bold;
+    color: #888;
+    transition: color 0.2s ease;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-data{
+    color: #ccc;
+}
+
+.social-link{
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.social-link:hover{
+    opacity: 1;
+}
+.copyright{
+    color: #74EBD5;
+    font-size: 0.8em;
+}
+
+#php-response{
+    background-image: url(../image/mailbox-open.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.success-message{
+    height: auto;
+}
+
+.full-height{
+    height: 100vh;
+}
+
+@media only screen and (max-width: 575.98px){
+    .navbar{
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+    }
+    .navbar-brand{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #about, #pricing, #store{
+        margin-bottom: 10vh;
+    }
+
+    .article-image{
+        display: none;
+    }
+
+    .hover-effect:before{
+        width: 25%;
+    }
+
+    .rounded-active{
+        transform: none;
+    }
+
+    .article-description{
+        text-align: center; 
+    }
+
+    #php-response{
+        background-position: top right;
+    }
+
+    #footer-logo{
+        width: 328px;
+    }
+}
