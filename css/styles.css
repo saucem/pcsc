@@ -1,6 +1,9 @@
-html, body, header{
+html{
+    width: 100%;
+}
+body, header{
     position: relative;
-    height: 100%;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -9,10 +12,6 @@ html, body, header{
     min-height: 6vh;
     z-index: 10;
     background-color: white;
-}
-
-.navbar-brand{
-
 }
 
 .active{
@@ -29,6 +28,7 @@ html, body, header{
 
 .hover-effect{
     position: relative;
+    font-weight: bold;
 }
 
 .hover-effect:before{
