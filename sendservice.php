@@ -19,7 +19,7 @@
 	$mensaje .= "Consulta: " . $falla . " \r\n";
 	$mensaje .= "Enviado el " . date('d/m/Y', time());
 
-	$para = 'ventas1@pcsolutioncenter.com.ar';
+	$para = 'ventas@pcsolutioncenter.com.ar';
 	$asunto = 'Apertura de ticket - Enviado desde formulario web';
 
 	mail($para, $asunto, utf8_decode($mensaje), $header);
